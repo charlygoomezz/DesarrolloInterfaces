@@ -97,3 +97,15 @@ for(let i = 0;i < info.stats.length; i++){
     }
 }
 console.log('Convertido:',statsNumerical);
+
+
+//EJERCICIO 2
+//1. IIFE para mostrar habilidades
+// Enunciado: Crea una función autoejecutable (IIFE) que recorra el
+// array de habilidades (abilities) en el archivo JSON.
+// Obtén los nombres de las habilidades y muéstralos en la consola como un array.
+
+(function(){
+    const abilities = data.abilities.map(({ability}) => ability.name);
+    console.log('Habilidades (IIFE):', abilities);
+})();
